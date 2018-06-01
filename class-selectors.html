@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Class Selectors</title>
+    <style>
+      h1, h2, h3 {
+        color: gray;
+        background: white;
+        padding: 0.5em;
+        border: 1px solid black;
+        font-family: Charcoal, sans-serif;
+      }
+      .warning {
+        font-weight: bold;
+        color: red;
+      }
+      .urgent {
+        font-style: italic;
+      }
+      .warning.urgent {
+        background: silver;
+      }
+      p.warning.help {
+        background: black;
+      }
+      #lead-para {
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Plutonium</h1>
+    <p id="lead-para">Useful for many applications, plutonium can also be dangerous if improperly handled.</p>
+    <h2>Safety Information</h2>
+    <p class="urgent warning">When handling plutonium, care must be taken to avoid the formation of critical mass.</p>
+    <p>With plutonium, <span class="warning">the possiblity of implosion is very real, and must be avoided at all costs</span>. This can be accomplished by keeping the various masses separate.</p>
+    <h3>Comments</h3>
+    <p>It's best to avoid using plutonium <span class="warning">at all</span> if it can be avoided.</p>
+    <p class="urgent warning help">Help, I've fallen/</p>
+  </body>
+</html>
